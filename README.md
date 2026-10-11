@@ -1,67 +1,136 @@
 # Bengaluru House Price Prediction 🏠
 
-## Overview
+A machine learning project to predict Bengaluru house prices using Python, Pandas, Scikit-learn, Random Forest, and Streamlit.
 
-A Machine Learning project that predicts approximate residential
-property prices in Bengaluru based on housing features.
+## 📌 Project Overview
 
-## Features
+This project predicts the estimated price of a house in Bengaluru based on details such as location, total square footage, number of bedrooms, and bathrooms.
 
-- Data cleaning and preprocessing
-- Location-based house price prediction
-- Random Forest regression model
-- Model evaluation using MAE and R²
-- Interactive web application built with Streamlit
+The project uses a **Random Forest Regressor** machine learning model and a Streamlit web application to make house price predictions through a simple user interface.
 
-## Technologies
+## 🎯 Project Objectives
 
-- Python
-- Pandas and NumPy
-- Scikit-learn
-- Streamlit
-- Joblib
+- Understand and preprocess real-world housing data.
+- Build a machine learning model using Random Forest Regression.
+- Estimate house prices based on user inputs.
+- Create an interactive web application using Streamlit.
+- Practice Python, machine learning, and project deployment skills.
 
-## Dataset
+## 🛠️ Technologies Used
 
-Bengaluru House Price Data:
-https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data
+- **Python** – Programming language
+- **Pandas** – Data manipulation and preprocessing
+- **NumPy** – Numerical operations
+- **Scikit-learn** – Machine learning model training and evaluation
+- **Random Forest Regressor** – House price prediction algorithm
+- **Streamlit** – Web application interface
+- **Git and GitHub** – Version control and project hosting
 
-Check the dataset licence and terms before redistributing the CSV.
+## 📂 Project Structure
 
-## Installation
+```text
+house_price_prediction/
+│
+├── data/
+│   └── Bengaluru_House_Data.csv
+│
+├── app.py
+├── house_price_utils.py
+├── train_house_price_model.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
-1. Clone or download this repository.
-2. Create and activate a virtual environment.
-3. Install dependencies:
+## 📊 Dataset
 
-   pip install -r requirements.txt
+The project uses Bengaluru housing data containing property-related information, including location, square footage, number of bedrooms, bathrooms, and price.
 
-4. Place the dataset at:
+The dataset is stored in the `data/` directory.
 
-   data/Bengaluru_House_Data.csv
+## ⚙️ Installation and Setup
 
-## Train the Model
+### 1. Clone the repository
 
-Run:
+```bash
+git clone https://github.com/Pavithra-web68/Bengaluru-house-price-prediction.git
+```
 
+### 2. Open the project folder
+
+```bash
+cd Bengaluru-house-price-prediction
+```
+
+### 3. Create a virtual environment (recommended)
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate the virtual environment on Windows
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+### 5. Install the required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 How to Run the Project
+
+### Step 1: Train the machine learning model
+
+```bash
 python train_house_price_model.py
+```
 
-This creates house_price_model.joblib.
+### Step 2: Start the Streamlit application
 
-## Launch the Application
+```bash
+python -m streamlit run app.py
+```
 
-Run:
+Open the local URL displayed in your terminal to use the application.
 
-streamlit run app.py
+**Note:** If the training script saves a model file, follow the output and file paths defined in the project code.
 
-Open the local URL shown in your terminal.
+## 🧠 Machine Learning Workflow
 
-## Evaluation
+1. Load the housing dataset.
+2. Explore and clean the data.
+3. Prepare the input features and target variable.
+4. Train a Random Forest Regression model.
+5. Evaluate model performance.
+6. Use the trained model to estimate house prices.
+7. Display predictions through a Streamlit application.
 
-The model reports Mean Absolute Error (MAE) and R² after training.
-Actual performance will depend on data quality and the test split.
+## 🌱 Learning Outcomes
 
-## Disclaimer
+- Working with a real-world dataset.
+- Performing basic data preprocessing.
+- Understanding supervised machine learning.
+- Training and evaluating a regression model.
+- Building an interactive application with Streamlit.
+- Managing a project using Git and GitHub.
 
-Predictions are estimates for educational purposes and are not
-professional property valuations.
+## 🔮 Future Improvements
+
+- Improve data cleaning and feature engineering.
+- Compare Random Forest with other regression algorithms.
+- Improve model accuracy through hyperparameter tuning.
+- Deploy the application online.
+- Add visualizations and more property features.
+
+## 👩‍💻 Author
+
+**Pavithra Daddali**
+
+GitHub: [Pavithra-web68](https://github.com/Pavithra-web68)
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star.
